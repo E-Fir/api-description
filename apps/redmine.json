@@ -5,7 +5,7 @@
       "json",
       "xml"
    ],
-   "version" : "0.1",
+   "version" : "0.2",
 
    "methods" :{
       "list_issues" : {
@@ -362,7 +362,16 @@
          ],
          "method" : "GET",
          "authentication" : true
-     }
+      },
+
+      "list_issue_statuses" : {
+         "path" : "/issue_statuses.:format",
+         "required_params" : [
+            "format"
+         ],
+         "method" : "GET",
+         "authentication" : true
+      }
    },
 
     "meta" : {
